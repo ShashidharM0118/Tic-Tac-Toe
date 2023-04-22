@@ -86,8 +86,9 @@ public class MainActivity extends AppCompatActivity {
 
                     } else if (b3.equals(b5) && b5.equals(b7) && !b3.equals("")) {
                         result.setText("Player with sign " + b3 + " has won the game  🫡 ");
-
-                    }
+                    }else if(count == 9){
+                        result.setText("ohh ! , Its a tie between both of you  😶 ");
+            }
                 }
 
 
@@ -113,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         btn7.setText("");
         btn8.setText("");
         btn9.setText("");
+        result.setText("");
     }
 
 
